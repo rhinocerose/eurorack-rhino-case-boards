@@ -74,7 +74,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "eurorack-rhino-case-boards.kicad_prl",
+    "filename": "jack-boards.kicad_prl",
     "version": 3
   },
   "project": {
