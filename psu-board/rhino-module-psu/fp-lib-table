@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "GMSN_Pure_Power_Strip_v1_20170629")(type "KiCad")(uri "$(KIPRJMOD)/rhino-module-psu.pretty")(options "")(descr ""))
+)

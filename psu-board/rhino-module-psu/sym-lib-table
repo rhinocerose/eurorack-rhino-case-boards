@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "GMSN_Pure_Power_Strip_v1_20170629-eagle-import")(type "KiCad")(uri "${KIPRJMOD}/GMSN_Pure_Power_Strip_v1_20170629-eagle-import.kicad_sym")(options "")(descr ""))
+)

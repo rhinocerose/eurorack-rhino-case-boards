@@ -1,0 +1,108 @@
+(footprint "SANYO-OSCON_D"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "SANYO OSCON Capacitor\n\nSource: e_os_all.pdf")
+	(property "Reference" "REF**"
+		(at -1.905 -1.27 0)
+		(layer "F.SilkS")
+		(uuid "cba3800c-89a4-46e3-960c-546316ed4c3e")
+		(effects
+			(font
+				(size 1.1684 1.1684)
+				(thickness 0.1016)
+			)
+			(justify left bottom)
+		)
+	)
+	(property "Value" "SANYO-OSCON_D"
+		(at -1.905 2.54 0)
+		(layer "F.Fab")
+		(uuid "6eeae374-f64f-48ca-897f-7d5870d8b769")
+		(effects
+			(font
+				(size 1.1684 1.1684)
+				(thickness 0.1016)
+			)
+			(justify left bottom)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d0d96f42-6d8f-446a-80bf-22b583f70152")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ed7e03b1-d29e-4a32-8ebe-c31e6bee21be")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bfd1bec2-feaa-43ba-b989-d732330780c9")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_line
+		(start -2.2 0)
+		(end -2.7 0)
+		(stroke
+			(width 0.4064)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a6727a57-f9b5-4c27-a164-b26fe3f00827")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 3.05 0)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "55fd6a63-ca8f-4eb9-89b2-b461d077b80c")
+	)
+	(pad "+" thru_hole circle
+		(at 1.25 0)
+		(size 1.27 1.27)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "1877df60-1d1a-488c-a00c-575ff22d3587")
+	)
+	(pad "-" thru_hole circle
+		(at -1.25 0)
+		(size 1.27 1.27)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "0e7a7d2d-c45f-46db-a628-38c3977597c7")
+	)
+)
