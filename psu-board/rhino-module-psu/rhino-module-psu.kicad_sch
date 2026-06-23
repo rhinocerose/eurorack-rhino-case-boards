@@ -1,14 +1,18 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "5b880110-71ff-4a56-99cf-a409f8bf8317")
 	(paper "User" 426.085 299.491)
 	(lib_symbols
 		(symbol "Device:LED"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -76,10 +80,22 @@
 			(symbol "LED_0_1"
 				(polyline
 					(pts
-						(xy -1.27 -1.27) (xy -1.27 1.27)
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
 					)
 					(stroke
-						(width 0.254)
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -100,7 +116,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+						(xy -1.27 -1.27) (xy -1.27 1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -112,22 +128,10 @@
 				)
 				(polyline
 					(pts
-						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
 					)
 					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
-					)
-					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -173,6 +177,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "GMSN_Pure_Power_Strip_v1_20170629-eagle-import:1X02_5MM_SCREWTERM"
 			(exclude_from_sim no)
@@ -259,7 +264,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 0) (xy 2.54 0)
+						(xy 1.27 2.54) (xy 2.54 2.54)
 					)
 					(stroke
 						(width 0.6096)
@@ -271,7 +276,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 2.54) (xy 2.54 2.54)
+						(xy 1.27 0) (xy 2.54 0)
 					)
 					(stroke
 						(width 0.6096)
@@ -342,162 +347,7 @@
 					)
 				)
 			)
-		)
-		(symbol "GMSN_Pure_Power_Strip_v1_20170629-eagle-import:C-US025-024X044"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "C"
-				(at 1.016 0.635 0)
-				(effects
-					(font
-						(size 1.778 1.5113)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Value" ""
-				(at 1.016 -4.191 0)
-				(effects
-					(font
-						(size 1.778 1.5113)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Footprint" "GMSN_Pure_Power_Strip_v1_20170629:C025-024X044"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "CAPACITOR, American symbol"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "C-US025-024X044_1_0"
-				(arc
-					(start 0 -1.0161)
-					(mid -1.302 -1.2303)
-					(end -2.4668 -1.8504)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 0) (xy 2.54 0)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.0161) (xy 0 -2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.016) (xy 0 -1.0161)
-					)
-					(stroke
-						(width 0.1524)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 2.4892 -1.8541)
-					(mid 1.3158 -1.2194)
-					(end 0 -1)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at 0 2.54 270)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-			)
+			(embedded_fonts no)
 		)
 		(symbol "GMSN_Pure_Power_Strip_v1_20170629-eagle-import:CPOL-USSANYO_D"
 			(exclude_from_sim no)
@@ -557,6 +407,18 @@
 				)
 			)
 			(symbol "CPOL-USSANYO_D_1_0"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(rectangle
 					(start -2.253 0.668)
 					(end -1.364 0.795)
@@ -580,35 +442,11 @@
 					)
 				)
 				(arc
-					(start 0 -1.0161)
+					(start -2.4669 -1.8504)
 					(mid -1.3021 -1.2303)
-					(end -2.4669 -1.8504)
+					(end 0 -1.0161)
 					(stroke
 						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 0) (xy 2.54 0)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.0161) (xy 0 -2.54)
-					)
-					(stroke
-						(width 0.1524)
 						(type solid)
 					)
 					(fill
@@ -627,10 +465,22 @@
 						(type none)
 					)
 				)
+				(polyline
+					(pts
+						(xy 0 -1.0161) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(arc
-					(start 2.4892 -1.8541)
+					(start 0 -1)
 					(mid 1.3158 -1.2194)
-					(end 0 -1)
+					(end 2.4892 -1.8541)
 					(stroke
 						(width 0.254)
 						(type solid)
@@ -676,6 +526,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "GMSN_Pure_Power_Strip_v1_20170629-eagle-import:EURO_POWER_16"
 			(exclude_from_sim no)
@@ -737,18 +588,6 @@
 			(symbol "EURO_POWER_16_1_0"
 				(polyline
 					(pts
-						(xy -5.08 -10.16) (xy 5.08 -10.16)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy -5.08 25.4) (xy -5.08 -10.16)
 					)
 					(stroke
@@ -761,7 +600,7 @@
 				)
 				(polyline
 					(pts
-						(xy 5.08 -10.16) (xy 5.08 25.4)
+						(xy -5.08 -10.16) (xy 5.08 -10.16)
 					)
 					(stroke
 						(width 0.254)
@@ -783,17 +622,29 @@
 						(type none)
 					)
 				)
+				(polyline
+					(pts
+						(xy 5.08 -10.16) (xy 5.08 25.4)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(pin bidirectional line
-					(at 10.16 7.62 180)
+					(at 10.16 22.86 180)
 					(length 5.08)
-					(name "V++"
+					(name "GATE"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "+12"
+					(number "GATE"
 						(effects
 							(font
 								(size 0 0)
@@ -802,16 +653,52 @@
 					)
 				)
 				(pin bidirectional line
-					(at 10.16 7.62 180)
+					(at 10.16 22.86 180)
 					(length 5.08)
-					(name "V++"
+					(name "GATE"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "+12A"
+					(number "GATEA"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 10.16 17.78 180)
+					(length 5.08)
+					(name "CV"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "CV"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 10.16 17.78 180)
+					(length 5.08)
+					(name "CV"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "CVA"
 						(effects
 							(font
 								(size 0 0)
@@ -856,16 +743,16 @@
 					)
 				)
 				(pin bidirectional line
-					(at 10.16 -7.62 180)
+					(at 10.16 7.62 180)
 					(length 5.08)
-					(name "V--"
+					(name "V++"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "-12"
+					(number "+12"
 						(effects
 							(font
 								(size 0 0)
@@ -874,16 +761,16 @@
 					)
 				)
 				(pin bidirectional line
-					(at 10.16 -7.62 180)
+					(at 10.16 7.62 180)
 					(length 5.08)
-					(name "V--"
+					(name "V++"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "-12A"
+					(number "+12A"
 						(effects
 							(font
 								(size 0 0)
@@ -1000,16 +887,16 @@
 					)
 				)
 				(pin bidirectional line
-					(at 10.16 17.78 180)
+					(at 10.16 -7.62 180)
 					(length 5.08)
-					(name "CV"
+					(name "V--"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "CV"
+					(number "-12"
 						(effects
 							(font
 								(size 0 0)
@@ -1018,52 +905,16 @@
 					)
 				)
 				(pin bidirectional line
-					(at 10.16 17.78 180)
+					(at 10.16 -7.62 180)
 					(length 5.08)
-					(name "CV"
+					(name "V--"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "CVA"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 10.16 22.86 180)
-					(length 5.08)
-					(name "GATE"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "GATE"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 10.16 22.86 180)
-					(length 5.08)
-					(name "GATE"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "GATEA"
+					(number "-12A"
 						(effects
 							(font
 								(size 0 0)
@@ -1072,6 +923,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "GMSN_Pure_Power_Strip_v1_20170629-eagle-import:R-US_0207/10"
 			(exclude_from_sim no)
@@ -1276,148 +1128,17 @@
 					)
 				)
 			)
-		)
-		(symbol "Regulator_Linear:LM1117DT-5.0"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at -3.81 3.175 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "LM1117DT-5.0"
-				(at 0 3.175 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:TO-252-3_TabPin2"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm1117.pdf"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "800mA Low-Dropout Linear Regulator, 5.0V fixed output, TO-252"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "linear regulator ldo fixed positive"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "TO?252*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "LM1117DT-5.0_0_1"
-				(rectangle
-					(start -5.08 -5.08)
-					(end 5.08 1.905)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "LM1117DT-5.0_1_1"
-				(pin power_in line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "VO"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -7.62 0 0)
-					(length 2.54)
-					(name "VI"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+12V"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1489,7 +1210,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -1501,7 +1222,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1532,132 +1253,17 @@
 					)
 				)
 			)
-		)
-		(symbol "power:+5V"
-			(power)
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "+5V"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+5V\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "+5V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+5V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
+			(embedded_fonts no)
 		)
 		(symbol "power:-12V"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1748,12 +1354,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1844,6 +1455,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "rhinocerose-power:REC30K-2412DZ"
 			(exclude_from_sim no)
@@ -1959,16 +1571,16 @@
 					)
 				)
 				(pin passive line
-					(at 0 -5.08 0)
+					(at 0 0 0)
 					(length 5.08)
-					(name "+VIN"
+					(name "CTRL"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1995,16 +1607,16 @@
 					)
 				)
 				(pin passive line
-					(at 0 0 0)
+					(at 0 -5.08 0)
 					(length 5.08)
-					(name "CTRL"
+					(name "+VIN"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "3"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2067,6 +1679,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 	)
 	(junction
@@ -2094,6 +1707,12 @@
 		(uuid "070c7727-3582-48a6-b325-c254daa48df1")
 	)
 	(junction
+		(at 304.8 160.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "08f1f046-4b1c-4932-80e9-106e31016300")
+	)
+	(junction
 		(at 167.64 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2112,22 +1731,10 @@
 		(uuid "10b8cc1c-0a94-428a-89b0-f7943acdb7c6")
 	)
 	(junction
-		(at 215.9 101.6)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "12d2ff4e-da62-49df-b802-863b23999d94")
-	)
-	(junction
 		(at 139.7 149.86)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "13872b4d-0eb8-4825-b17d-0a5c6669e56a")
-	)
-	(junction
-		(at 304.8 160.02)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1546c69f-8e5e-4955-9c11-38ff01b77a2f")
 	)
 	(junction
 		(at 160.02 160.02)
@@ -2224,12 +1831,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "59b95c96-9250-491a-ba39-c6b83fa8afaa")
-	)
-	(junction
-		(at 228.6 120.65)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5e5f2741-3108-4ff7-b8c1-c21ee220df08")
 	)
 	(junction
 		(at 180.34 160.02)
@@ -2362,12 +1963,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "95c62670-1d31-4a3e-b60d-678543020575")
-	)
-	(junction
-		(at 241.3 101.6)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "972eea78-19d6-4ff3-9b66-47fc4f61bcaf")
 	)
 	(junction
 		(at 304.8 154.94)
@@ -2526,12 +2121,6 @@
 		(uuid "ecf345a5-1493-425f-8ded-4d320a74fc78")
 	)
 	(junction
-		(at 228.6 114.3)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f1184bb1-fc85-4e33-ba6b-94442b2578f5")
-	)
-	(junction
 		(at 180.34 149.86)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2573,16 +2162,6 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 120.65) (xy 228.6 120.904)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "008a3199-4529-4393-8d01-5be33bdd916c")
-	)
-	(wire
-		(pts
 			(xy 123.19 73.66) (xy 123.19 85.09)
 		)
 		(stroke
@@ -2620,16 +2199,6 @@
 			(type solid)
 		)
 		(uuid "078a453a-9726-464f-aa4f-61675cd8c53a")
-	)
-	(wire
-		(pts
-			(xy 314.96 113.03) (xy 309.88 113.03)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "08674302-7be0-4e30-b222-0cb22ff32c14")
 	)
 	(wire
 		(pts
@@ -2723,16 +2292,6 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 101.6) (xy 210.82 101.6)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "182d1020-93ae-4189-9163-a49433d771cb")
-	)
-	(wire
-		(pts
 			(xy 123.19 85.09) (xy 123.19 85.344)
 		)
 		(stroke
@@ -2740,16 +2299,6 @@
 			(type solid)
 		)
 		(uuid "1a946546-f9b5-437e-a1b5-ab341a356d64")
-	)
-	(wire
-		(pts
-			(xy 241.3 114.3) (xy 228.6 114.3)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "1b972efa-47a6-410e-b24b-b721504d921f")
 	)
 	(wire
 		(pts
@@ -2813,36 +2362,6 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 106.68) (xy 215.9 101.6)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "2595d87a-5e73-4351-8bb7-7118c97fd6ec")
-	)
-	(wire
-		(pts
-			(xy 304.8 160.02) (xy 314.96 160.02)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "26b85f39-98df-44e5-9c68-f79a71d8a513")
-	)
-	(wire
-		(pts
-			(xy 215.9 114.3) (xy 228.6 114.3)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "26c7bbb8-3f97-4447-b57d-97f8af892486")
-	)
-	(wire
-		(pts
 			(xy 198.12 149.86) (xy 215.9 149.86)
 		)
 		(stroke
@@ -2880,16 +2399,6 @@
 			(type solid)
 		)
 		(uuid "2c63f321-3897-4e4c-bbdc-df996fa01375")
-	)
-	(wire
-		(pts
-			(xy 236.22 101.6) (xy 238.76 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "31abfb30-ddca-4196-8a94-52ffce5fb0d7")
 	)
 	(wire
 		(pts
@@ -2973,16 +2482,6 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 109.22) (xy 228.6 114.3)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "4aaada61-c49a-48fa-9e5a-022c117b1477")
-	)
-	(wire
-		(pts
 			(xy 158.75 71.12) (xy 158.75 66.04)
 		)
 		(stroke
@@ -3030,16 +2529,6 @@
 			(type solid)
 		)
 		(uuid "5356607b-ae92-47b3-8dc1-3c3dc3ef247b")
-	)
-	(wire
-		(pts
-			(xy 238.76 101.6) (xy 241.3 101.6)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "550fc0b2-3ad0-4cfa-bf6e-f5050c23ba47")
 	)
 	(wire
 		(pts
@@ -3100,16 +2589,6 @@
 			(type solid)
 		)
 		(uuid "5e6db60d-da2a-49ac-94c5-4be27cc09e06")
-	)
-	(wire
-		(pts
-			(xy 309.88 113.03) (xy 309.88 109.22)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "65b16fd1-0ef8-4a93-b63b-1e904ff0c33f")
 	)
 	(wire
 		(pts
@@ -3183,26 +2662,6 @@
 	)
 	(wire
 		(pts
-			(xy 314.96 121.92) (xy 314.96 127)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "750db73c-ad35-4c5e-a952-137391675fb2")
-	)
-	(wire
-		(pts
-			(xy 314.96 127) (xy 292.1 127)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "82fc45dd-5b8b-47ce-9f63-76a400dfb940")
-	)
-	(wire
-		(pts
 			(xy 292.1 121.92) (xy 292.1 127)
 		)
 		(stroke
@@ -3273,16 +2732,6 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 101.6) (xy 215.9 101.6)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "98d08967-a29e-4fa0-be76-d95c2272cabf")
-	)
-	(wire
-		(pts
 			(xy 233.68 172.72) (xy 215.9 172.72)
 		)
 		(stroke
@@ -3330,16 +2779,6 @@
 			(type solid)
 		)
 		(uuid "a5ebf12f-f7e6-4c64-a6d9-f356cf514130")
-	)
-	(wire
-		(pts
-			(xy 241.3 106.68) (xy 241.3 101.6)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "a63ae073-22ad-40c8-b9c1-a6f15b3b547b")
 	)
 	(wire
 		(pts
@@ -3443,6 +2882,16 @@
 	)
 	(wire
 		(pts
+			(xy 304.8 154.94) (xy 304.8 160.02)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "bef3ae50-9698-4709-982c-948c9df62ed4")
+	)
+	(wire
+		(pts
 			(xy 233.68 154.94) (xy 215.9 154.94)
 		)
 		(stroke
@@ -3483,13 +2932,13 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 101.6) (xy 220.98 101.6)
+			(xy 304.8 160.02) (xy 304.8 165.1)
 		)
 		(stroke
-			(width 0)
-			(type default)
+			(width 0.1524)
+			(type solid)
 		)
-		(uuid "c958de2f-d28d-4536-8a12-7419227b24ae")
+		(uuid "c7f1a777-bdea-43c8-9930-55381f0306da")
 	)
 	(wire
 		(pts
@@ -3583,16 +3032,6 @@
 	)
 	(wire
 		(pts
-			(xy 304.8 154.94) (xy 314.96 154.94)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "d915812e-a0dc-4427-b237-411b3884fd1d")
-	)
-	(wire
-		(pts
 			(xy 180.34 160.02) (xy 160.02 160.02)
 		)
 		(stroke
@@ -3600,16 +3039,6 @@
 			(type solid)
 		)
 		(uuid "da92291f-faa2-40f0-9b4d-6635a6889c5b")
-	)
-	(wire
-		(pts
-			(xy 314.96 113.03) (xy 314.96 114.3)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "db83af69-6d0e-4aba-a725-bba215eb1fe6")
 	)
 	(wire
 		(pts
@@ -3723,6 +3152,16 @@
 	)
 	(wire
 		(pts
+			(xy 304.8 149.86) (xy 304.8 154.94)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "f1bb35a0-8289-489e-9236-cf19e8d6a10d")
+	)
+	(wire
+		(pts
 			(xy 167.64 81.28) (xy 175.26 81.28)
 		)
 		(stroke
@@ -3753,36 +3192,6 @@
 	)
 	(wire
 		(pts
-			(xy 304.8 149.86) (xy 314.96 149.86)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "f473b57b-4bfa-425f-9f9b-08a173d942f2")
-	)
-	(wire
-		(pts
-			(xy 309.88 99.06) (xy 309.88 88.9)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "f762e146-9c41-42d2-b787-bcfc913a84a9")
-	)
-	(wire
-		(pts
-			(xy 241.3 101.6) (xy 248.92 101.6)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "f7c45e3f-6f0d-4d12-83cb-7e15b6d7d1a8")
-	)
-	(wire
-		(pts
 			(xy 287.02 160.02) (xy 269.24 160.02)
 		)
 		(stroke
@@ -3793,16 +3202,6 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 114.3) (xy 228.6 120.65)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "fd0c2a02-9543-4489-842f-600c14436d86")
-	)
-	(wire
-		(pts
 			(xy 119.38 172.72) (xy 101.6 172.72)
 		)
 		(stroke
@@ -3810,28 +3209,6 @@
 			(type solid)
 		)
 		(uuid "fecfbbec-1c1f-4b46-995d-b67272d464d5")
-	)
-	(label "CV1"
-		(at 314.96 149.86 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.2446 1.2446)
-			)
-			(justify left bottom)
-		)
-		(uuid "4d47d4a6-a308-4fe3-9e38-aca9dce0dda3")
-	)
-	(label "CV2"
-		(at 314.96 154.94 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.2446 1.2446)
-			)
-			(justify left bottom)
-		)
-		(uuid "cbe2d593-0f63-4199-bb51-77f067222177")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -4363,76 +3740,6 @@
 			(project ""
 				(path "/5b880110-71ff-4a56-99cf-a409f8bf8317"
 					(reference "U$9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "GMSN_Pure_Power_Strip_v1_20170629-eagle-import:R-US_0207/10")
-		(at 309.88 104.14 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "21173a95-b3e3-4227-806f-02a6175210ad")
-		(property "Reference" "R3"
-			(at 308.3814 107.95 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Value" "R-US_0207/10"
-			(at 313.182 107.95 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 309.88 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 309.88 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 309.88 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "046cbf6a-23a1-4f30-b50b-85f732448ae0")
-		)
-		(pin "1"
-			(uuid "16beccb2-2194-4188-93eb-35fe69abee86")
-		)
-		(instances
-			(project ""
-				(path "/5b880110-71ff-4a56-99cf-a409f8bf8317"
-					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -5312,72 +4619,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+12V")
-		(at 210.82 101.6 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "80ce4f75-fad7-488d-9247-394115deb106")
-		(property "Reference" "#PWR010"
-			(at 210.82 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+12V"
-			(at 210.82 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 210.82 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 210.82 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 210.82 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ac4e05e6-999d-43b9-92e4-f8cc12d919b3")
-		)
-		(instances
-			(project "GMSN_Pure_Power_Strip_v1_20170629"
-				(path "/5b880110-71ff-4a56-99cf-a409f8bf8317"
-					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "GMSN_Pure_Power_Strip_v1_20170629-eagle-import:CPOL-USSANYO_D")
 		(at 115.57 78.74 180)
 		(unit 1)
@@ -5559,76 +4800,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 314.96 118.11 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "88715beb-e968-4447-8ea0-35f3d306632c")
-		(property "Reference" "D2"
-			(at 318.77 118.4274 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "LED"
-			(at 318.77 120.9674 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 314.96 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 314.96 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 314.96 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ee53387f-b97f-48f2-8a22-4a4cde701439")
-		)
-		(pin "1"
-			(uuid "a3230ab7-1e03-49bd-a772-4a1e83affe77")
-		)
-		(instances
-			(project "GMSN_Pure_Power_Strip_v1_20170629"
-				(path "/5b880110-71ff-4a56-99cf-a409f8bf8317"
-					(reference "D2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "GMSN_Pure_Power_Strip_v1_20170629-eagle-import:EURO_POWER_16")
 		(at 187.96 172.72 0)
 		(unit 1)
@@ -5734,72 +4905,6 @@
 			(project ""
 				(path "/5b880110-71ff-4a56-99cf-a409f8bf8317"
 					(reference "U$7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 228.6 120.65 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8a86b822-fe4c-4f8b-b2ac-813a123a178d")
-		(property "Reference" "#PWR05"
-			(at 228.6 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 228.6 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 228.6 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 228.6 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 228.6 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "926bfe71-afcc-4e1e-a4ff-575ffc1ff504")
-		)
-		(instances
-			(project "GMSN_Pure_Power_Strip_v1_20170629"
-				(path "/5b880110-71ff-4a56-99cf-a409f8bf8317"
-					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -6002,72 +5107,6 @@
 			(project ""
 				(path "/5b880110-71ff-4a56-99cf-a409f8bf8317"
 					(reference "C2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 248.92 101.6 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a88a7f12-8f29-4906-8c81-ceccd39d5a7a")
-		(property "Reference" "#PWR09"
-			(at 248.92 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 248.92 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 248.92 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 248.92 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 248.92 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7cc4488d-ef9e-4766-9e00-2526ac1da2c8")
-		)
-		(instances
-			(project "GMSN_Pure_Power_Strip_v1_20170629"
-				(path "/5b880110-71ff-4a56-99cf-a409f8bf8317"
-					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -6477,72 +5516,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 309.88 88.9 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cf28137b-69a2-4dfa-bd02-fcbcc71300aa")
-		(property "Reference" "#PWR01"
-			(at 309.88 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 309.88 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 309.88 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 309.88 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 309.88 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "13177a3f-c0df-48e0-8bf6-200c3fb8e3fb")
-		)
-		(instances
-			(project ""
-				(path "/5b880110-71ff-4a56-99cf-a409f8bf8317"
-					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:-12V")
 		(at 175.26 66.04 0)
 		(unit 1)
@@ -6609,71 +5582,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 314.96 160.02 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ddcfc79a-e97a-4a73-a4b4-599ce937f09a")
-		(property "Reference" "#PWR015"
-			(at 314.96 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 318.516 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 314.96 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 314.96 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 314.96 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "27d289cf-7457-496d-a251-f1231d7a76ac")
-		)
-		(instances
-			(project "GMSN_Pure_Power_Strip_v1_20170629"
-				(path "/5b880110-71ff-4a56-99cf-a409f8bf8317"
-					(reference "#PWR015")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 311.15 172.72 0)
 		(unit 1)
@@ -6734,218 +5642,6 @@
 			(project "GMSN_Pure_Power_Strip_v1_20170629"
 				(path "/5b880110-71ff-4a56-99cf-a409f8bf8317"
 					(reference "#PWR08")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "GMSN_Pure_Power_Strip_v1_20170629-eagle-import:C-US025-024X044")
-		(at 241.3 109.22 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e00f86de-c536-470f-9e00-f55761f93e5d")
-		(property "Reference" "C9"
-			(at 242.316 108.585 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Value" "C-US025-024X044"
-			(at 242.316 113.411 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 241.3 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 241.3 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 241.3 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ca66e6dd-757b-4650-a812-9e17bc24d3a5")
-		)
-		(pin "1"
-			(uuid "a902feaf-ec97-47ae-9377-63dd0efff310")
-		)
-		(instances
-			(project ""
-				(path "/5b880110-71ff-4a56-99cf-a409f8bf8317"
-					(reference "C9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Regulator_Linear:LM1117DT-5.0")
-		(at 228.6 101.6 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e03f9ade-3c06-47cd-a705-3609eacd2675")
-		(property "Reference" "IC1"
-			(at 220.98 95.885 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Value" "78T"
-			(at 220.98 98.425 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:TO-252-3_TabPin2"
-			(at 228.6 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm1117.pdf"
-			(at 228.6 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "800mA Low-Dropout Linear Regulator, 5.0V fixed output, TO-252"
-			(at 228.6 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "e8c788bb-91f7-4afa-a8ee-829a047d9b70")
-		)
-		(pin "2"
-			(uuid "5c41d1b2-6f85-42d4-809a-139fc96886e1")
-		)
-		(pin "1"
-			(uuid "71305852-dc21-4c18-a5c4-2d0e7f6df9a4")
-		)
-		(instances
-			(project ""
-				(path "/5b880110-71ff-4a56-99cf-a409f8bf8317"
-					(reference "IC1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "GMSN_Pure_Power_Strip_v1_20170629-eagle-import:C-US025-024X044")
-		(at 215.9 109.22 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e8aeeaf0-bf9c-486c-a93b-a7c79b25f293")
-		(property "Reference" "C8"
-			(at 216.916 108.585 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Value" "C-US025-024X044"
-			(at 216.916 113.411 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 215.9 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 215.9 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 215.9 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "11daedab-404b-43b8-8983-527ea7c5e3be")
-		)
-		(pin "2"
-			(uuid "1c3c3ff6-2902-45ca-ba64-704fb0503edb")
-		)
-		(instances
-			(project ""
-				(path "/5b880110-71ff-4a56-99cf-a409f8bf8317"
-					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -7202,4 +5898,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )
